@@ -7,7 +7,7 @@ export default function PromoOverlay(): React.ReactNode {
         Dapatkan diskon 25% dalam rangka menyambut bulan ramadhan. jangan
         lewatkan kesempatan !!!
       </p>
-      <p className="font-bold underline cursor-pointer">Produk sale</p>
+      <p className="font-bold cursor-pointer hover:underline">Produk sale</p>
     </section>
   )
 }
