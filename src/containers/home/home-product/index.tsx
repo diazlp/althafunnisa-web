@@ -1,13 +1,13 @@
 import DisplayImageCard from '@/components/display-card'
 import React from 'react'
 
-export default function NewProductSection(): React.ReactNode {
+export default function HomeProductSection(): React.ReactNode {
   return (
     <section className="my-5">
       <p className="text-center text-menu-title font-bold mb-5">Produk Baru</p>
 
       <div className="flex gap-5">
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           <DisplayImageCard
             src="/assets/home/new-display-1.png"
             alt="New Display 1"
@@ -19,7 +19,7 @@ export default function NewProductSection(): React.ReactNode {
           <p className="text-brand-text text-gray-100">Khimar</p>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           <DisplayImageCard
             src="/assets/home/new-display-2.png"
             alt="New Display 2"
@@ -31,7 +31,7 @@ export default function NewProductSection(): React.ReactNode {
           <p className="text-brand-text text-gray-100">Women Espresso</p>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           <DisplayImageCard
             src="/assets/home/new-display-3.png"
             alt="New Display 3"

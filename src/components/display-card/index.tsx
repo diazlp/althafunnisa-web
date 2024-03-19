@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 type DisplayImageCardProps = {
   src: string
@@ -16,8 +17,10 @@ export default function DisplayImageCard({
   isCategorySection = false,
   categoryTitle
 }: DisplayImageCardProps): React.ReactNode {
+  const router = useRouter()
+
   return (
-    <figure className="rounded-xl overflow-hidden h-[587px] select-none relative">
+    <figure className="rounded-xl overflow-hidden h-[587px] w-full select-none relative">
       {isNewProduct ? (
         <div className="bg-yellow-100 text-center font-bold text-black absolute top-[25px] left-[31px] w-[118px] h-[38px] items-center leading-[38px]">
           New
@@ -26,7 +29,7 @@ export default function DisplayImageCard({
       <Image
         alt={alt}
         src={src}
-        className="h-full object-contain w-full"
+        className="h-full object-cover w-full"
         width={413}
         height={587}
         priority
@@ -38,7 +41,8 @@ export default function DisplayImageCard({
           </p>
           <button
             type="button"
-            className="rounded-full text-white bg-yellow-100 w-[95px] h-[47px]"
+            className="rounded-full text-white bg-yellow-100 w-[95px] h-[47px] hover:bg-yellow-500"
+            onClick={() => router.push('/catalog')}
           >
             Lihat
           </button>

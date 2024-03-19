@@ -3,7 +3,7 @@ import Layout from '@/components/layout'
 import HomeInformation from './home-info'
 import Container from '@/components/container'
 import Image from 'next/image'
-import NewProductSection from './new-product'
+import HomeProductSection from './home-product'
 import HomeCategorySection from './home-category'
 
 export default function HomeContainer(): React.ReactNode {
@@ -21,7 +21,7 @@ export default function HomeContainer(): React.ReactNode {
           priority
         />
 
-        <NewProductSection />
+        <HomeProductSection />
 
         <figure className="rounded-3xl overflow-hidden h-[426px] relative">
           <Image
