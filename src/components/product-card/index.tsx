@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 type ProductCardProps = {
   src: string
@@ -14,9 +15,14 @@ export default function ProductCard({
   isNewProduct = false,
   isPreOrder = false
 }: ProductCardProps): React.ReactNode {
+  const router = useRouter()
+
   return (
-    <section className="flex flex-col w-[336px] h-[452px]">
-      <figure className="overflow-hidden h-[317px] w-full rounded-3xl relative">
+    <section className="flex flex-col w-[336px] h-[452px] ">
+      <figure
+        className="overflow-hidden h-[317px] w-full rounded-3xl relative cursor-pointer"
+        onClick={() => router.push('/detail')}
+      >
         <Image
           alt={alt}
           src={src}
