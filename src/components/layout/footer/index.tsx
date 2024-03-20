@@ -94,7 +94,7 @@ export default function Footer(): React.ReactNode {
       </div>
 
       <p className="text-center my-4">
-        Copyright &copy; 2024 Althafunnisa Co. All rights reserved.
+        Copyright &copy; 2024 Diaz Linggaputra. All rights reserved.
       </p>
     </footer>
   )

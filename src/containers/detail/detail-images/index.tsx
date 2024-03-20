@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function DetailImage(): React.ReactNode {
+export default function DetailImages(): React.ReactNode {
   return (
     <section className="flex gap-5 2xl:gap-10">
       <div className="flex flex-col gap-3">
