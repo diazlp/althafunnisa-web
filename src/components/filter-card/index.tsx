@@ -10,7 +10,7 @@ export default function FilterCard(): React.ReactNode {
   }
 
   return (
-    <section className="flex flex-col h-[600px] w-[266px] select-none gap-3">
+    <section className="flex flex-col h-[600px] w-[266px] min-w-[266px] select-none gap-3">
       <div className="flex justify-between">
         <p className="text-gray-100">Filter by:</p>
         <p className="text-blue-700 cursor-pointer hover:underline">Clear</p>
